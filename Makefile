@@ -8,6 +8,7 @@
 .PHONY: clean
 clean:
 	-rm appGenerator
+	-podman rmi localhost/appgenerator
 
 ############################################################
 # build section
@@ -16,3 +17,12 @@ clean:
 .PHONY: build
 build:
 	go build ./cmd/appGenerator
+	podman build -t localhost/appgenerator .
+
+############################################################
+# tests section
+############################################################
+
+.PHONY: test
+test:
+	kustomize build --enable-alpha-plugins test/01-minimal/

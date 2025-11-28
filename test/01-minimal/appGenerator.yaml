@@ -1,0 +1,10 @@
+apiVersion: aushacker.github.com/v1alpha1
+kind: AppGenerator
+metadata:
+  name: notImportantHere
+  annotations:
+    config.kubernetes.io/function: |
+      container:
+        image: localhost/appgenerator:latest
+spec:
+  chartName: minecraft
