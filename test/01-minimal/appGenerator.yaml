@@ -6,5 +6,6 @@ metadata:
     config.kubernetes.io/function: |
       container:
         image: localhost/appgenerator:latest
-spec:
-  chartName: minecraft
+#spec:
+#  chartName: minecraft
+value: bar
