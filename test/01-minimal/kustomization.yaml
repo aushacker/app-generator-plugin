@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
   - service.yaml
 
-transformers:
+generators:
   - appGenerator.yaml
 
 namespace: foo
