@@ -1,5 +1,5 @@
 # Binaries for programs and plugins
-appGenerator
+/appGenerator
 **/.DS_Store
 
 # Test binary, built with `go test -c`
